@@ -1,0 +1,21 @@
+body {
+    position: relative;
+    background-color: rgb(41, 41, 41);
+}
+
+#pageContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+#sidebarContainer {
+    width: 25px;
+    height: 98vh;
+    background-color: rgb(66, 66, 66);
+    margin-right: 5vw;
+    position: fixed;
+}
+
+#pageContent {
+    height: 200vh;
+}
