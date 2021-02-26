@@ -9,6 +9,7 @@ body {
 }
 
 #sidebarContainer {
+    display: flex;
     width: 25px;
     height: 98vh;
     background-color: rgb(66, 66, 66);
@@ -18,4 +19,16 @@ body {
 
 #pageContent {
     height: 200vh;
+}
+
+#sidebarContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#sidebarContent button {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
