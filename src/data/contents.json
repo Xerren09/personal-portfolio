@@ -1,0 +1,66 @@
+{
+    "businessCard": {
+        "name": "Bars Margetsch",
+        "tagLine": "Second year software engineer student in Oulu, Finland",
+        "currentlyAt": "Student at Oulu University of Applied Sciences",
+        "socials": {
+            "github": "https://github.com/Xerren09",
+            "linkedin": "https://www.linkedin.com/in/bars-margetsch",
+            "email": "bars.margetsch@outlook.com"
+        }
+    },
+    "intro" : [
+        "I'm currently a student in my second year, studying web development at the Oulu University of Applied Sciences.",
+        "I enjoy tinkering with all sorts of technologies, be it for small webpages, larger web services, or standalone applications; but I especially enjoy working on backend and related services because of the interesting and wide variety of challenges they offer.",
+        "One of my strengths is recognizing and understanding problems, then building tools and utilities that can be easily used by others to tackle them.",
+        "I'm looking for an internship or trainee position, as a part of my course's Practical Training module, and eager to learn a lot more :)",
+        "VS Code Pets enjoyer. (Clippy my beloved ❤️)"
+    ],
+    "skills": [
+        {
+            "name": "Languages",
+            "list": ["ES6 JavaScript", "C#", "Python", "MySQL", "HTML5", "CSS"]
+        },
+        {
+            "name": "Frameworks",
+            "list": ["Node", "React", "Express", ".NET (C# Console and WinForm)", "Unity"]
+        },
+        {
+            "name": "Tools",
+            "list": ["Visual Studio and Visual Studio Code", "Git and GitHub", "Postman", "npm", "MySQL Workbench", "Unity"]
+        },
+        {
+            "name": "Cloud Services",
+            "list": ["Microsoft Azure"]
+        }
+    ],
+    "education": [
+        {
+            "name": "Oulu University of Applied Sciences",
+            "degree": "Bachelor of Applied Science - BASc, Computer Software Engineering",
+            "start": "2020",
+            "end": "Present (expected to finish in 2025)",
+            "comments" : [
+                "Web and mobile app development",
+                "Server development (REST APIs, WebSockets, UDP sockets)",
+                "Usage of various cloud services and hybrid technologies"
+            ]
+        }
+    ],
+    "jobs": [
+
+    ],
+    "projects": [
+        {
+            "type": "github",
+            "link": "https://github.com/Xerren09/express-route-loader",
+            "comments": [
+                "designed during my second year of university with the goal of simplifying our API building workflow"
+            ]
+        },
+        {
+            "type": "github",
+            "link": "https://github.com/Xerren09/EntityEngine"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+  "short_name": "My resume built in React!",
+  "name": "Bars Margetsch | Resume",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

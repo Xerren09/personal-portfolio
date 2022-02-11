@@ -1,0 +1,11 @@
+body {
+    font-size: 13pt;
+    font-weight: 300;
+    background-color: #282c34;
+    color: white;
+}
+
+.App {
+    text-align: left;
+    height: 100%;
+}

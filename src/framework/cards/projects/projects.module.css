@@ -1,0 +1,10 @@
+.container a {
+    color: #ffffff;
+    transition: color 0.15s;
+    text-decoration: none;
+}
+
+.container a:hover {
+    color: #79075c;
+    transition: color 0.15s;
+}
