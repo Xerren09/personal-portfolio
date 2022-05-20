@@ -1,11 +1,62 @@
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    background-color: var(--main-bg-color) !important;
+}
+
 body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
     font-size: 13pt;
     font-weight: 300;
-    background-color: #282c34;
-    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .App {
-    text-align: left;
-    height: 100%;
+    color: var(--text-primary);
+    background-color: var(--main-bg-color);
+    transition: all .5s;
+}
+
+body a {
+    color: var(--url-primary);
+    transition: color 0.15s;
+    text-decoration: none;
+}
+
+body a:hover {
+    color: var(--url-fade);
+    transition: color 0.15s;
+}
+
+:root {
+    --main-bg-color: #282c34;
+    --card-bg-color: #21252c;
+    --text-primary: #ececec;
+    --text-secondary: darkgray;
+    --url-primary: #ececec;
+    --url-fade: #79075c;
+    --url-static: white;
+    /*#d8d8d83d*/
+    --border-color: #00000023;
+    --shadow-color: #00000023;
+    --accent-primary: #75135dba;
+    --accent-secondary: #f5f6fc85;
+    
+}
+
+[data-theme="light"]  {
+    --main-bg-color: #ececec;
+    --card-bg-color: #f3f3f3;
+    --text-primary: #282c34;
+    --text-secondary: #737373;
+    --url-primary: #3d434f;
+    --url-fade: #79075c;
+    --url-static: white;
+    --border-color: #00000010;
+    --shadow-color: #00000023;
+    --accent-primary: #75135dba;
+    --accent-secondary: #f5f6fc85;
 }

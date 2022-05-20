@@ -3,7 +3,7 @@ import styles from './education.module.css';
 export default function EducationCard(props) {
     return (
         <div className={styles.container}>
-            <h3>{props.data.name}</h3>
+            <a rel="noreferrer" target="_blank" href={props.data.link}><h3>{props.data.name}</h3></a>
             <div>
                 {props.data.degree}
             </div>
@@ -15,7 +15,7 @@ export default function EducationCard(props) {
                 </ul>
             </div>
             <div className={styles.period}>
-                {props.data.start} - {props.data.end}
+                <em>{props.data.start} - {props.data.end}</em>
             </div>
         </div>
     )

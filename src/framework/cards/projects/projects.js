@@ -35,7 +35,7 @@ export default function ProjectCard(props) {
                     description: "Couldn't connect to the third-party API to get the project details. Fret not; the link should probably still work!",
                     comments: props.data.comments? props.data.comments.map(element => <p>{prettyFormatStringNode(element)}</p>) : [],
                     language: "love",
-                    typeIcon: <i className="fab fa-github"></i>
+                    typeIcon: <i className="fas fa-heart"></i>
                 });
             }
             else
@@ -43,7 +43,7 @@ export default function ProjectCard(props) {
                 setProjectInfo({
                     name: props.data.link.split("/")[props.data.link.split("/").length-1],
                     link: props.data.link,
-                    description: prettyFormatStringNode(repoInfo.description),
+                    description: <em>{prettyFormatStringNode(repoInfo.description)}</em>,
                     comments: props.data.comments? props.data.comments.map(element => <p>{prettyFormatStringNode(element)}</p>) : [],
                     language: repoInfo.language,
                     typeIcon: <i className="fab fa-github"></i>
@@ -57,13 +57,13 @@ export default function ProjectCard(props) {
 
     return (
         <div className={styles.container}>
-            <a rel="noreferrer" target="_blank" href={projectInfo.link} > <h3> <i className="fas fa-external-link-alt fa-xs"></i> {projectInfo.name} {projectInfo.typeIcon}</h3> </a>
+            <a rel="noreferrer" target="_blank" href={projectInfo.link} > <h3> {/* <i className="fas fa-external-link-alt fa-xs"></i> */} {projectInfo.name} {projectInfo.typeIcon}</h3> </a>
             <span>{projectInfo.description}</span>
             {
                 projectInfo.comments.map(element => {return element})
             }
             <p>
-                <span><i>Built with {projectInfo.language}.</i></span>
+                <span><em className={styles.builtWithText}>Built with {projectInfo.language}.</em></span>
             </p>
         </div>
     )

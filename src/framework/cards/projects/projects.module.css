@@ -1,10 +1,17 @@
+.container {
+    border-bottom: solid 2px var(--border-color);
+}
+
 .container a {
-    color: #ffffff;
     transition: color 0.15s;
     text-decoration: none;
 }
 
 .container a:hover {
-    color: #79075c;
+    color: var(--url-fade);
     transition: color 0.15s;
+}
+
+.builtWithText {
+    color: var(--text-secondary);
 }

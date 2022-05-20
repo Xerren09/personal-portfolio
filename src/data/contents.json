@@ -10,10 +10,10 @@
         }
     },
     "intro" : [
-        "I'm currently a student in my second year, studying web development at the Oulu University of Applied Sciences.",
-        "I enjoy tinkering with all sorts of technologies, be it for small webpages, larger web services, or standalone applications; but I especially enjoy working on backend and related services because of the interesting and wide variety of challenges they offer.",
-        "One of my strengths is recognizing and understanding problems, then building tools and utilities that can be easily used by others to tackle them.",
-        "I'm looking for an internship or trainee position, as a part of my course's Practical Training module, and eager to learn a lot more :)",
+        "I'm currently a student in my second year, studying web and software development at the Oulu University of Applied Sciences.",
+        "I enjoy working with all sorts of technologies, be it for small webpages, larger web services, or standalone applications; but especially enjoy working on backend and related services because of the interesting and wide variety of technical challenges they offer.",
+        "One of my strengths is problem solving, and building tools and utilities that can be easily used to tackle them.",
+        "I'm currently looking for an internship or trainee position, as a part of my course's Practical Training module, to learn the in and outs of professional software development :)",
         "VS Code Pets enjoyer. (Clippy my beloved ❤️)"
     ],
     "skills": [
@@ -23,20 +23,21 @@
         },
         {
             "name": "Frameworks",
-            "list": ["Node", "React", "Express", ".NET (C# Console and WinForm)", "Unity"]
+            "list": ["Node", ".NET (C# Console, WinForm)", "React", "Express", "Unity"]
         },
         {
             "name": "Tools",
-            "list": ["Visual Studio and Visual Studio Code", "Git and GitHub", "Postman", "npm", "MySQL Workbench", "Unity"]
+            "list": ["Visual Studio and Visual Studio Code", "Git and GitHub", "npm", "MySQL Workbench", "Unity", "Postman"]
         },
         {
             "name": "Cloud Services",
-            "list": ["Microsoft Azure"]
+            "list": ["Microsoft Azure (App-Service, MySQL)", "Google Firebase"]
         }
     ],
     "education": [
         {
             "name": "Oulu University of Applied Sciences",
+            "link" : "https://www.oamk.fi/en/",
             "degree": "Bachelor of Applied Science - BASc, Computer Software Engineering",
             "start": "2020",
             "end": "Present (expected to finish in 2025)",
@@ -60,7 +61,16 @@
         },
         {
             "type": "github",
-            "link": "https://github.com/Xerren09/EntityEngine"
+            "link": "https://github.com/Xerren09/cloudflare-dynamic-dns"
+        },
+        {
+            "type": "github",
+            "link": "https://github.com/Xerren09/EntityEngine",
+            "comments": [
+                "Originally written during my first year studies in the second period, where I first met JavaScript.",
+                "Given how early and quickly I wrote it, it has massive problems and design issues, however, I learnt a lot from it, and since started completely rewriting it to 'do it properly' this time, with my current knowledge, hence why it's included :)",
+                "The rewrite process is done on the 'V2' branch, where I also take notes on what, how, and why I changed and learnt since. (This is done in my freetime, so it's a slow but steady process.)"
+            ]
         }
     ]
 }

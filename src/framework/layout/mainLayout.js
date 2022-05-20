@@ -41,6 +41,9 @@ export default function mainLayout(props) {
             </div>
             {/* Container for the main page contents, basically everything. Alight to the right on desktop, to bottom on mobile! */}
             <div id="mainContentContainer" className={styles.right}>
+                <div className={styles.themeSwitch}>
+                    <button className={styles.themeIcon} onClick={props.setTheme}>{ props.theme == "dark" ? <i class="fas fa-sun"></i> : <i class="fas fa-moon"></i>}</button>
+                </div>
                 {/* Introduction topic, this loads user written comments. */}
                 <div className={styles.topic}>
                     <h2 className={styles.topicTitle}>Introduction</h2>
@@ -82,6 +85,9 @@ export default function mainLayout(props) {
                     }
                 </div>
                 {/* Test! */}
+                <div id={styles.footer}>
+                    <a rel="noreferrer" target="_blank" href="https://github.com/Xerren09/personal-portfolio"><em>Created by me! - 2022</em></a>
+                </div>
             </div>
         </div>
     )
