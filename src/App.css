@@ -32,8 +32,8 @@ body a:hover {
 }
 
 :root {
-    --main-bg-color: #282c34;
-    --card-bg-color: #21252c;
+    --main-bg-color: #21252c;
+    --card-bg-color: #282c34;
     --text-primary: #ececec;
     --text-secondary: darkgray;
     --url-primary: #ececec;

@@ -1,8 +1,8 @@
 {
     "businessCard": {
         "name": "Bars Margetsch",
-        "tagLine": "Second year software engineer student in Oulu, Finland",
-        "currentlyAt": "Student at Oulu University of Applied Sciences",
+        "tagLine": "Second year software engineer student in Oulu, Finland,",
+        "currentlyAt": "at the Oulu University of Applied Sciences",
         "socials": {
             "github": "https://github.com/Xerren09",
             "linkedin": "https://www.linkedin.com/in/bars-margetsch",
@@ -56,7 +56,7 @@
             "type": "github",
             "link": "https://github.com/Xerren09/express-route-loader",
             "comments": [
-                "designed during my second year of university with the goal of simplifying our API building workflow"
+                "Designed during my second year of university with the goal of simplifying our API building workflow"
             ]
         },
         {
@@ -68,7 +68,7 @@
             "link": "https://github.com/Xerren09/EntityEngine",
             "comments": [
                 "Originally written during my first year studies in the second period, where I first met JavaScript.",
-                "Given how early and quickly I wrote it, it has massive problems and design issues, however, I learnt a lot from it, and since started completely rewriting it to 'do it properly' this time, with my current knowledge, hence why it's included :)",
+                "Given how early and quickly I wrote it, it has massive problems and design issues, however, I learnt a lot from it, and since started completely rewriting it to 'do it properly' this time, with my current knowledge, hence why it's included here :)",
                 "The rewrite process is done on the 'V2' branch, where I also take notes on what, how, and why I changed and learnt since. (This is done in my freetime, so it's a slow but steady process.)"
             ]
         }
