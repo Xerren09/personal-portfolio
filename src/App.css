@@ -19,21 +19,57 @@ body {
     background-color: var(--main-bg-color);
     transition: all .5s;
 }
+/*
+h2 {
+    animation-name: flow;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    background: linear-gradient(-60deg, var(--accent-secondary), var(--accent-primary));
+    width: fit-content;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
-body a {
+h4 {
+    animation-name: flow;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    background: linear-gradient(-60deg, var(--accent-secondary), var(--accent-primary));
+    width: fit-content;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes flow {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}*/
+
+a {
     color: var(--url-primary);
     transition: color 0.15s;
     text-decoration: none;
 }
 
-body a:hover {
+a:hover {
     color: var(--url-fade);
     transition: color 0.15s;
 }
 
 :root {
     --main-bg-color: #21252c;
-    --card-bg-color: #282c34;
+    --card-bg-color: #2c323c; /* New: 2c323c  .  Old: 282c34*/
     --text-primary: #ececec;
     --text-secondary: darkgray;
     --url-primary: #ececec;
@@ -48,7 +84,7 @@ body a:hover {
 }
 
 [data-theme="light"]  {
-    --main-bg-color: #ececec;
+    --main-bg-color: #e7e7e7; /* New: e7e7e7  .  Old: ececec*/
     --card-bg-color: #f3f3f3;
     --text-primary: #282c34;
     --text-secondary: #737373;
