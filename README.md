@@ -1,70 +1,144 @@
-# Getting Started with Create React App
+# Personal portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I've started working on this portfolio site around the start of my second year in university with the goal of creating a page to show off my projects, and building upon it over time. Altough I'm not particularly at home with frontend webdesign, I wanted to build something cool, while also learning a bunch of new things.
 
-## Available Scripts
+This is meant to be a personal project so it is highly tailored for myself, but feel free to use it as a base start for your own page (**with attribution of course**).
 
-In the project directory, you can run:
+It is currently live on [barsmargetsch.net](https://barsmargetsch.net/).
 
-### `npm start`
+## Setup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Customise the contents of the `public` folder
+  * The `data` folder contains the `contents.json` file
+  * Replace `card.png` with an image that should show up as a website preview
+  * Edit the `index.html` meta tags for your liking
+* Build the app
+* Freely edit the `contents.json` file inside `build/data/`, without the need to re-build, to change the contents of the site
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+### Light / Dark theme
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<div align="center">
+    <img src="./docs/PortfolioThemeSwitch.gif" width="75%" height="75%"/>
+</div>
 
-### `npm run build`
+Built-in light / dark theme, while keeping accent colours. Automatically changes to the browser's indicated theme preference.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Colours are found in the `App.css` file. Changing the colour map requires a rebuild of the project.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Mobile layout
 
-### `npm run eject`
+<div align="center">
+    <img src="./docs/PortfolioMobileLayout.gif" height="275px"/>
+</div>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Comes with an elegant and just-as-easy to use mobile layout. Tapping the down arrow below the socials scrolls right down to the contents. 
+For mobile, I've opted for a floating theme-switch button, to keep the visuals consistent.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Easy content editor
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<div align="center">
+    <img src="./docs/ContentsJSON.gif" width="75%" height="75%"/>
+</div>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Editing the section contents is as simple as editing a JSON file, and it does not require the project to be rebuilt. The `contents.json` file allows for a fair amount of customization.
 
-## Learn More
+#### Business card
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Format:
+```json
+"businessCard": {
+    "name": "",
+    "tagLine": "",
+    "currentlyAt": "",
+    "socials": {
+        "github": "",
+        "linkedin": "",
+        "email": ""
+    }
+},
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This section appears on the left side (or on the cover in the mobile layout), over the profile image. The socials section is manually customsable, since it relies on icons (FontAwesome is available by default).
 
-### Code Splitting
+#### Introduction
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Format: `"intro" : [""]`
 
-### Analyzing the Bundle Size
+This section is purely an array of strings. For convenience's sake paragraphs can be organised into separate items, which makes them appear as their own `<p>` element.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### Skills
 
-### Making a Progressive Web App
+Format: 
+```json
+"skills": [
+    {
+        "name": "",
+        "list": [""]
+    }
+]
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The skills section consists of multiple named lists, or categories. Simply name the category and add what skills fall under it.
 
-### Advanced Configuration
+#### Education
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Format:
+```json
+"education": [
+    {
+        "name": "",
+        "url" : "",
+        "degree": "",
+        "start": "",
+        "end": "",
+        "comments" : [
+            ""
+        ]
+    }
+]
+```
 
-### Deployment
+Education section elements offer the basic options. The name of the insitution, an optional link to their website, the name of the degree, and the start - end dates. Optionally comments can be added (e.g., what exactly does the course entails).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+#### Jobs
 
-### `npm run build` fails to minify
+Format:
+```json
+"jobs": [
+    {
+        "name": "",
+        "url" : "",
+        "position": "",
+        "start": "",
+        "end": "",
+        "comments" : [
+            ""
+        ]
+    }
+]
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Similar to the education section, with the exception of the `position` field, which behaves identically to the `degree` field.
+
+#### Selected Projects
+
+Format:
+```json
+"projects": [
+    {
+        "type": "",
+        "url": "",
+        "comments": [
+            ""
+        ]
+    }
+]
+```
+
+This section offers the most customizability, altough it requires custom code to be written, and the project recompiled. It's possible to set up various project types within the `src/framework/sections/projects/types` folder, using the common `projectBase`. This class converts the given URL into a backend API url (replacement strings need to be provided in code), and returns the backend data. This can then be used to display the project information in any form.
+
+By default, only a GitHub converter is given, which takes the repository `About` contents, and the language the project is written in.
+Optionally, comments can be added to further describe the project.

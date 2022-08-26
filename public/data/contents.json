@@ -19,7 +19,7 @@
     "skills": [
         {
             "name": "Languages",
-            "list": ["ES6 JavaScript", "C#", "Python", "MySQL", "HTML5", "CSS"]
+            "list": ["C#", "ES6 JavaScript", "Python", "MySQL", "HTML5", "CSS"]
         },
         {
             "name": "Frameworks",
@@ -27,17 +27,17 @@
         },
         {
             "name": "Tools",
-            "list": ["Visual Studio and Visual Studio Code", "Git and GitHub", "npm", "MySQL Workbench", "Unity", "Postman"]
+            "list": ["Visual Studio and Visual Studio Code", "Git and GitHub", "npm", "Unity", "MySQL Workbench", "Postman"]
         },
         {
             "name": "Cloud Services",
-            "list": ["Microsoft Azure (App-Service, MySQL)", "Google Firebase"]
+            "list": ["Microsoft Azure (App-Service, MySQL)", "Google Firestore"]
         }
     ],
     "education": [
         {
             "name": "Oulu University of Applied Sciences",
-            "link" : "https://www.oamk.fi/en/",
+            "url" : "https://www.oamk.fi/en/",
             "degree": "Bachelor of Applied Science - BASc, Computer Software Engineering",
             "start": "2020",
             "end": "Present (expected to finish in 2025)",
@@ -54,22 +54,22 @@
     "projects": [
         {
             "type": "github",
-            "link": "https://github.com/Xerren09/express-route-loader",
+            "url": "https://github.com/Xerren09/express-route-loader",
             "comments": [
                 "Designed during my second year of university with the goal of simplifying our API building workflow"
             ]
         },
         {
             "type": "github",
-            "link": "https://github.com/Xerren09/cloudflare-dynamic-dns"
+            "url": "https://github.com/Xerren09/cloudflare-dynamic-dns"
         },
         {
             "type": "github",
-            "link": "https://github.com/Xerren09/EntityEngine",
+            "url": "https://github.com/Xerren09/EntityEngine",
             "comments": [
-                "Originally written during my first year studies in the second period, where I first met JavaScript.",
-                "Given how early and quickly I wrote it, it has massive problems and design issues, however, I learnt a lot from it, and since started completely rewriting it to 'do it properly' this time, with my current knowledge, hence why it's included here :)",
-                "The rewrite process is done on the 'V2' branch, where I also take notes on what, how, and why I changed and learnt since. (This is done in my freetime, so it's a slow but steady process.)"
+                "Originally written during my first year studies where I first met JavaScript, it has evolved quite a lot since:",
+                "From a messy, clearly not too familiar-with-javascript version, to a much better, performant, and more elegenant TypeScript version, which properly highlights my work.",
+                "Additionally, there are also notes on how and why I changed things between versions, and what I learnt during development."
             ]
         }
     ]

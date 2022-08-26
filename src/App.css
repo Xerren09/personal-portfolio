@@ -19,42 +19,6 @@ body {
     background-color: var(--main-bg-color);
     transition: all .5s;
 }
-/*
-h2 {
-    animation-name: flow;
-    animation-duration: 6s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    background: linear-gradient(-60deg, var(--accent-secondary), var(--accent-primary));
-    width: fit-content;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-h4 {
-    animation-name: flow;
-    animation-duration: 6s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    background: linear-gradient(-60deg, var(--accent-secondary), var(--accent-primary));
-    width: fit-content;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-@keyframes flow {
-    0% {
-        background-position: 0 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0 50%;
-    }
-}*/
 
 a {
     color: var(--url-primary);
