@@ -1,8 +1,8 @@
 # Personal portfolio
 
-I've started working on this portfolio site around the start of my second year in university with the goal of creating a page to show off my projects, and building upon it over time. Altough I'm not particularly at home with frontend webdesign, I wanted to build something cool, while also learning a bunch of new things.
+I've started working on this portfolio site around the start of my second year in university with the goal of creating a page to show off my projects, and building upon it over time. Although I'm not particularly at home with frontend web design, I wanted to build something cool, while also learning a bunch of new things.
 
-This is meant to be a personal project so it is highly tailored for myself, but feel free to use it as a base start for your own page (**with attribution of course**).
+This is meant to be a personal project, so it is highly tailored for myself, but feel free to use it as a base start for your own page (**with attribution of course**).
 
 It is currently live on [barsmargetsch.net](https://barsmargetsch.net/).
 
@@ -61,7 +61,7 @@ Format:
 },
 ```
 
-This section appears on the left side (or on the cover in the mobile layout), over the profile image. The socials section is manually customsable, since it relies on icons (FontAwesome is available by default).
+This section appears on the left side (or on the cover in the mobile layout), over the profile image. The socials section is manually customisable, since it relies on icons (FontAwesome is available by default).
 
 #### Introduction
 
@@ -101,7 +101,7 @@ Format:
 ]
 ```
 
-Education section elements offer the basic options. The name of the insitution, an optional link to their website, the name of the degree, and the start - end dates. Optionally comments can be added (e.g., what exactly does the course entails).
+Education section elements offer the basic options. The name of the institution, an optional link to their website, the name of the degree, and the start - end dates. Optionally comments can be added (e.g., what exactly does the course entails).
 
 #### Jobs
 
@@ -138,7 +138,7 @@ Format:
 ]
 ```
 
-This section offers the most customizability, altough it requires custom code to be written, and the project recompiled. It's possible to set up various project types within the `src/framework/sections/projects/types` folder, using the common `projectBase`. This class converts the given URL into a backend API url (replacement strings need to be provided in code), and returns the backend data. This can then be used to display the project information in any form.
+This section offers the most customizability, although it requires custom code to be written, and the project recompiled. It's possible to set up various project types within the `src/framework/sections/projects/types` folder, using the common `projectBase`. This class converts the given URL into a backend API url (replacement strings need to be provided in code) and returns the backend data. This can then be used to display the project information in any form.
 
 By default, only a GitHub converter is given, which takes the repository `About` contents, and the language the project is written in.
 Optionally, comments can be added to further describe the project.
