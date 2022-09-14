@@ -1,3 +1,4 @@
+import React from 'react';
 import prettyFormatStringNode from '../../prettyFormatString.js';
 import styles from './intro.module.css';
 import topicStyles from '../../layout/topic.module.css';

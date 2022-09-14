@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './education.module.css';
 
 export default function EducationCard(props) {

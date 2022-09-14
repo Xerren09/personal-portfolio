@@ -1,3 +1,4 @@
+import React from 'react';
 import topicStyles from '../../layout/topic.module.css';
 import EducationCard from './education.js';
 

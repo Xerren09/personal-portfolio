@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './job.module.css';
 
 export default function JobCard(props) {
