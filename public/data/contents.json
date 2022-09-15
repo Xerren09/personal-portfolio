@@ -1,7 +1,7 @@
 {
     "businessCard": {
         "name": "Bars Margetsch",
-        "tagLine": "Second year software engineer student in Oulu, Finland,",
+        "tagLine": "Third year software engineer student in Oulu, Finland,",
         "currentlyAt": "at the Oulu University of Applied Sciences",
         "socials": {
             "github": "https://github.com/Xerren09",
@@ -10,7 +10,7 @@
         }
     },
     "intro" : [
-        "I'm currently a student in my second year, studying web and software development at the Oulu University of Applied Sciences.",
+        "I'm currently a student in my third year, studying web and software development at the Oulu University of Applied Sciences.",
         "I enjoy working with all sorts of technologies, be it for small webpages, larger web services, or standalone applications; but especially enjoy working on backend and related services because of the interesting and wide variety of technical challenges they offer.",
         "One of my strengths is problem solving, and building tools and utilities that can be easily used to tackle them.",
         "I'm currently looking for an internship or trainee position, as a part of my course's Practical Training module, to learn the in and outs of professional software development :)",
@@ -19,7 +19,7 @@
     "skills": [
         {
             "name": "Languages",
-            "list": ["C#", "ES6 JavaScript", "Python", "MySQL", "HTML5", "CSS"]
+            "list": ["C#", "ES6 JavaScript", "TypeScript", "Python", "MySQL", "HTML5", "CSS"]
         },
         {
             "name": "Frameworks",
@@ -67,9 +67,9 @@
             "type": "github",
             "url": "https://github.com/Xerren09/EntityEngine",
             "comments": [
-                "Originally written during my first year studies where I first met JavaScript, it has evolved quite a lot since:",
-                "From a messy, clearly not too familiar-with-javascript version, to a much better, performant, and more elegenant TypeScript version, which properly highlights my work.",
-                "Additionally, there are also notes on how and why I changed things between versions, and what I learnt during development."
+                "Originally written during my first year studies for an assignment as an intro to JavaScript, it has evolved quite a lot since as a little personal project:",
+                "From a messy, clearly not too familiar-with-javascript version, to a much better, performant, and more elegant TypeScript version, which I feel properly highlights my work.",
+                "There are also notes on how and why I changed things between versions, and what I learnt during development."
             ]
         }
     ]
