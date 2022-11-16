@@ -43,7 +43,7 @@ a:hover {
     --border-color: #00000023;
     --shadow-color: #00000023;
     --accent-primary: #75135dba;
-    --accent-secondary: #f5f6fc85;
+    --accent-secondary: #f5f6fc21;
     
 }
 
@@ -58,5 +58,5 @@ a:hover {
     --border-color: #00000010;
     --shadow-color: #00000023;
     --accent-primary: #75135dba;
-    --accent-secondary: #f5f6fc85;
+    --accent-secondary: #f5f6fc21;
 }

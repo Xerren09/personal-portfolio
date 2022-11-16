@@ -8,6 +8,7 @@ import SkillsSection from '../sections/skills/index.js';
 import EducationSection from '../sections/education/index.js';
 import JobsSection from '../sections/jobs/index.js';
 import ProjectsSection from '../sections/projects/index.js';
+import DownloadCVButton from '../sections/downloadCV/index.js';
 
 export default function MainPageLayout(props) {
     const [pageData, setPageData] = useState();
@@ -46,7 +47,8 @@ export default function MainPageLayout(props) {
                     {/* Projects! This loads in a list of featured projects. Can pull data from third-party
                         sites with the right configuration which is nice c:
                     */}
-                    <ProjectsSection data={ pageData.projects } />
+                    <ProjectsSection data={pageData.projects} />
+                    <DownloadCVButton data={pageData.cvPath} />
                     <div id={styles.footer}>
                         <a rel="noreferrer" target="_blank" href="https://github.com/Xerren09/personal-portfolio"><em>Created by me! - 2022</em></a>
                     </div>

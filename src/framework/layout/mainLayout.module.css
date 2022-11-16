@@ -60,6 +60,7 @@
     justify-content: right;
     font-size: 12pt;
     margin-right: 30px;
+    color: var(--text-primary);
 }
 
 #footer a:hover {
