@@ -1,0 +1,8 @@
+{
+    "branch" : "main",
+    "build": [
+		"npm install",
+		"npm run build"
+    ],
+    "run": "./build/index.html"
+}
