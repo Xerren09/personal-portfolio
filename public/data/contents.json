@@ -72,5 +72,6 @@
                 "There are also notes on how and why I changed things between versions, and what I learnt during development."
             ]
         }
-    ]
+    ],
+    "cvPath" : "data/cv.pdf"
 }
