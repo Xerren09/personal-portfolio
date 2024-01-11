@@ -1,0 +1,116 @@
+cover:
+  name: Bars Margetsch
+  tag: Fourth year software engineer student based in Oulu, Finland
+  currentlyAt: Oulu University of Applied Sciences
+  socials:
+    - name: github
+      url: https://github.com/Xerren09
+    - name: linkedin
+      url: https://www.linkedin.com/in/bars-margetsch
+  email: bars.margetsch@outlook.com
+introduction:
+  "
+  I'm currently a student in my fourth - and final - year, working towards my bachelor's degree in software engineering at the Oulu University of Applied Sciences.
+  
+
+  I enjoy working with all sorts of technologies, be it for small webpages, larger web services, or standalone applications; but especially enjoy working on backend and related services because of the interesting and wide variety of technical challenges and learning opportunities they offer.
+  
+
+  One of my strengths is problem solving, and I am especially passionate about building high quality tools and utilities that can be easily used to tackle them.
+  
+
+  I'm currently looking for an internship or trainee position, as a part of my course's Practical Training module, to learn the in and outs of professional software development :)
+  
+
+  VS Code Pets enjoyer. (Clippy my beloved ❤️)
+  "
+skills:
+  - name: Languages
+    items: 
+      - C#
+      - TypeScript
+      - Python
+      - PowerShell
+      - MySQL
+      - HTML & CSS
+  - name: Frameworks
+    items: 
+      - .NET (C# Console, WinForm, WebView2)
+      - NodeJS
+      - React
+      - Angular
+      - ExpressJS
+      - Unity
+  - name: Tools
+    items: 
+      - Visual Studio & Code
+      - Git
+      - JIRA
+      - npm
+      - PowerShell
+      - Unity
+      - Postman
+  - name: Cloud
+    items: 
+      - Microsoft Azure (App-Service, MySQL, VMs)
+      - Google Firestore
+experience:
+  - name: Keysight Nemo Wireless Network Solutions
+    url: https://www.linkedin.com/company/keysight-nemo-wireless-network-solutions/
+    title: Software Engineer // Intern
+    start: 2023 March
+    end: 2024 March
+    comments: 
+      "
+      * Developing prototype cross-platform UI application for Nemo Outdoor using web technologies
+
+      * UI application built with Angular 15, running in a C# WinForms Edge WebView2 host application for native system API support
+
+      * Application was built from scratch, using Nemo Outdoor's existing RestAPI as the backend
+
+      * Developed custom window-based layout system written in Angular used to display multiple custom made graphs and data views in the same page
+
+      * UI side measurement service WebWorker to process multiple simultaneous WebSockets with live measurement data from Outdoor
+
+      * Native Windows support via Edge WebView2 as a standalone application, cross platform support via any web-browser
+      "
+education:
+  - name: Oulu University of Applied Sciences
+    url: https://www.oamk.fi/en/
+    title: Bachelor of Engineering - BEng, Computer Software Engineering
+    start: 2020 autumn
+    end: Present (expected to finish spring 2024)
+    comments: 
+      "
+      * Web and mobile app development
+
+      * Server development (REST APIs, WebSockets, TCP/UDP sockets)
+
+      * Usage of various cloud services and hybrid technologies
+      "
+showcase:
+  - type: github
+    url: https://github.com/Xerren09/Boop
+    comments: 
+      "
+        It was designed as a small \"replacement\" for cloud hosting, since during our studies we often needed to host our projects but most services were paid and way too much of an overkill for a small app or website.
+        
+
+        Boop does virtually everything we needed, all while being cute :)
+        
+        
+        It was (and still is) a fun side-project between our periods to see how something like this could work out.
+      "
+  - type: github
+    url: https://github.com/Xerren09/unity-ui-navigator
+    comments: 
+      "
+      This small framework was designed to provide an easy to use view management system for Unity's new UI system (UI Toolkit).
+
+
+      Originally it was built for a specific project (an entirely UI based idle mobile game), but grew large enough to become its own thing.
+
+
+      Given how there is no official framework for this use case, I decided to release it as a Unity package to fill the gap.
+      "
+pdf: data/cv.pdf

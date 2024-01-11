@@ -1,0 +1,66 @@
+/*
+    Desktop // Landscape
+*/
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.cover {
+    width: 35%;
+    height: 100vh;
+    position: fixed;
+    box-shadow: var(--shadow);
+    animation: fadeIn 1s ease-out, moveIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes moveIn {
+    from { transform : translateX(-25px) }
+    to   { transform : translateX(0px) }
+}
+
+.content {
+    margin-left: 35%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+/*
+    Mobile // Portrait
+*/
+@media screen and (orientation:portrait) {
+    .container {
+        flex-direction: column;
+    }
+
+    .cover {
+        width: 100%;
+        position: static;
+        box-shadow: 0px 10px 5px 0px var(--shadow-color);
+        margin-bottom: 20px;
+        animation: fadeIn 1s ease-out, moveIn 0.5s ease-out;
+    }
+
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    @keyframes moveIn {
+        from { transform : translateY(-25px) }
+        to   { transform : translateY(0px) }
+    }
+
+    .content {
+        margin-left: 0px;
+    }
+}

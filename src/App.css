@@ -1,62 +1,6 @@
-html {
-    scroll-behavior: smooth;
-    height: 100%;
-    background-color: var(--main-bg-color) !important;
-}
-
-body {
-    margin: 0;
-    height: 100%;
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 13pt;
-    font-weight: 300;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
 .App {
     color: var(--text-primary);
-    background-color: var(--main-bg-color);
+    background-color: var(--background);
     transition: all .5s;
-}
-
-a {
-    color: var(--url-primary);
-    transition: color 0.15s;
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--url-fade);
-    transition: color 0.15s;
-}
-
-:root {
-    --main-bg-color: #21252c;
-    --card-bg-color: #2c323c; /* New: 2c323c  .  Old: 282c34*/
-    --text-primary: #ececec;
-    --text-secondary: darkgray;
-    --url-primary: #ececec;
-    --url-fade: #79075c;
-    --url-static: white;
-    /*#d8d8d83d*/
-    --border-color: #00000023;
-    --shadow-color: #00000023;
-    --accent-primary: #75135dba;
-    --accent-secondary: #f5f6fc21;
-    
-}
-
-[data-theme="light"]  {
-    --main-bg-color: #e7e7e7; /* New: e7e7e7  .  Old: ececec*/
-    --card-bg-color: #f3f3f3;
-    --text-primary: #282c34;
-    --text-secondary: #737373;
-    --url-primary: #3d434f;
-    --url-fade: #79075c;
-    --url-static: white;
-    --border-color: #00000010;
-    --shadow-color: #00000023;
-    --accent-primary: #75135dba;
-    --accent-secondary: #f5f6fc21;
+    display: flex;
 }
