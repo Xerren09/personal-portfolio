@@ -10,7 +10,7 @@ export function Page(props: IPageProps) {
             paddingTop: 28,
             gap: 28,
             justifyContent: "stretch",
-            alignContent: "stretch",
+            alignContent: "stretch"
         }}>
             <div id="PageContent" style={{
                 display: "flex",
