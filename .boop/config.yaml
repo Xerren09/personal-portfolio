@@ -1,0 +1,7 @@
+type: webapp
+branch: main
+build:
+  - npm ci
+  - npm run install
+deploy:
+  entry: ./build/index.html
