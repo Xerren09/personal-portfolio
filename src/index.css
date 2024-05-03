@@ -110,7 +110,7 @@ ul {
     --accent-secondary: #f5f6fc21;
 
     --code-background: #6e768166;
-    --cover-background: linear-gradient(to bottom, var(--accent-secondary), var(--accent-primary)), url('./assets/image.png');
+    --cover-background: linear-gradient(to bottom, var(--accent-secondary), var(--accent-primary)), url('./assets/image.webp');
     --cover-text: #ececec;
 
     --shadow-ms: 0 1.6px 3.6px 0 rgba(0,0,0,.132),0 .3px .9px 0 rgba(0,0,0,.108);

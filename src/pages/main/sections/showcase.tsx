@@ -2,10 +2,9 @@ import { ReactNode } from "react";
 import { Section } from "../../../components/section";
 
 export function ShowCase(props: IShowCaseProps) {
-
-    return (
+    return  props.data === undefined ? null : (
         <Section
-            title="Projects"
+            title={ props.title }
         >
             {
                 props.data.map((item, index) => {
@@ -28,6 +27,7 @@ export function ShowCase(props: IShowCaseProps) {
 }
 
 interface IShowCaseProps {
+    title: string,
     data: ShowCaseData;
     transformers: Array<ShowCaseProjectTransformer>;
 }

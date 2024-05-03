@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import yaml from "js-yaml";
-import image from "../../assets/image.png"
+import image from "../../assets/image.webp";
 import { Section } from "../../components/section";
 
 export function PortfolioBox() {
@@ -30,7 +30,9 @@ export function PortfolioBox() {
                     style={{
                         objectFit: "cover",
                         objectPosition: "25% 25%",
-                        borderRadius: 10
+                        borderRadius: 10,
+                        minHeight: 75,
+                        minWidth: 75
                     }}
                     src={image}
                     height={"75px"}
@@ -44,7 +46,7 @@ export function PortfolioBox() {
                 >
                     <h3
                         style={{
-                            lineHeight: 0.6
+                            lineHeight: 1
                         }}
                     >
                         {data?.name}
@@ -56,7 +58,7 @@ export function PortfolioBox() {
                     >
                         {data?.tag}
                     </p>
-                    <Link to={"/"}>See more <i className="fa-solid fa-caret-right"></i></Link>
+                    <Link to={"/"}>Check out my portfolio <i className="fa-solid fa-caret-right"></i></Link>
                 </div>
             
             </div>

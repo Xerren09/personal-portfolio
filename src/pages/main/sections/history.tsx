@@ -2,7 +2,7 @@ import { Comments } from "../../../components/comments/comments";
 import { Section } from "../../../components/section";
 
 export function History(props: IHistoryProps) {
-    return (
+    return props.data === undefined ? null : (
         <Section
             title={ props.title }
         >

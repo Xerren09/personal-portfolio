@@ -1,5 +1,5 @@
 export function DownloadPDFButton(props: PDFButtonProps) {
-    return (
+    return props.url === undefined ? null : (
         <a
             style={{
                 display: "flex",
@@ -25,5 +25,5 @@ export function DownloadPDFButton(props: PDFButtonProps) {
 }
 
 interface PDFButtonProps {
-    url: string;
+    url: string | undefined;
 }

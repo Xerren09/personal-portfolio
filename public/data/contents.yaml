@@ -62,17 +62,21 @@ experience:
     end: 2024 March
     comments: 
       "
-      * Developing prototype cross-platform UI application for Nemo Outdoor using web technologies
+      * Developed cross-platform UI application for [Nemo Outdoor](https://www.keysight.com/fi/en/product/NTA50000B/nemo-outdoor-5g-nr-drive-test-solution.html) using web technologies
 
-      * UI application built with Angular 15, running in a C# WinForms Edge WebView2 host application for native system API support
+      * UI application built with Angular 15, running in a C# WinForms Edge WebView2 host application for native Windows API support
 
-      * Application was built from scratch, using Nemo Outdoor's existing RestAPI as the backend
+      * Application was built from scratch, using Nemo Outdoor's existing RestAPI as the backend and leveraging Keysight's internal Alloy Component Library
 
-      * [Developed custom window-based layout system written in Angular](/posts/ks-window-layout) used to display multiple custom made graphs and data views in the same page
+      * [Developed custom window-based layout system written in Angular](/posts/ks-window-layout) used to display multiple custom data views with live graphs in the same page
 
-      * UI side measurement service WebWorker to process multiple simultaneous WebSockets with live measurement data from Outdoor
+      * Live measurement data via an UI side Measurement Service using WebWorker to process multiple simultaneous WebSockets from Outdoor
 
       * Native Windows support via Edge WebView2 as a standalone application, cross platform support via any web-browser
+
+      * Redesigned application flow and user experience, device management, and workspace system
+
+      * Developed custom build tooling that integrates into Outdoor's current build workflow
       "
 education:
   - name: Oulu University of Applied Sciences
@@ -96,7 +100,7 @@ showcase:
         It was designed as a small \"replacement\" for cloud hosting, since during our studies we often needed to host our projects but most services were paid and way too much of an overkill for a small app or website.
         
 
-        Boop does virtually everything we needed, all while being cute :)
+        Boop does virtually everything we needed, all while being cute, and has been in use on my Raspberry Pi 4B since the start :)
         
         
         It was (and still is) a fun side-project between our periods to see how something like this could work out.
@@ -112,5 +116,17 @@ showcase:
 
 
       Given how there is no official framework for this use case, I decided to release it as a Unity package to fill the gap.
+      "
+  - type: github
+    url: https://github.com/Xerren09/EntityEngine
+    comments:
+      "
+      Originally written during my first year studies for an assignment as an intro to JavaScript, it has evolved quite a lot since its very first iteration (based on a HTML table), to a capable little engine running on an HTML Canvas with spritesheet and object support.
+
+
+      It has also been upgraded to TypeScript with the latest iteration, and several performance enchancements have been made, particularly in collision detection and rendering.
+
+
+      There are also notes on how and why I changed things between versions, and what I learnt during development.
       "
 pdf: data/cv.pdf

@@ -2,7 +2,7 @@ import { Comments } from "../../../components/comments/comments";
 import { Section } from "../../../components/section";
 
 export function Introduction(props: IIntroductionProps) {
-    return (
+    return props.data === undefined ? null : (
         <Section
             title="Introduction"
         >

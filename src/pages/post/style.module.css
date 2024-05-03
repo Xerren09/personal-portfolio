@@ -4,8 +4,8 @@
     line-height: 160%;
     display: flex;
     flex-direction: column;
-    gap: 28px;
-    width: 70vw;
+    gap: 18px;
+    width: unset;
 }
 
 .blogContent {
@@ -51,7 +51,8 @@
 /*For mobile*/
 @media screen and (orientation:portrait) {
     .blog {
-        margin-left: 28px;
-        margin-right: 28px;
+        margin-left: 16px;
+        margin-right: 16px;
+        width: unset;
     }
 }

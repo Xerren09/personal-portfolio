@@ -44,23 +44,30 @@ export default function PortfolioPage() {
                         marginTop: 8
                     }}
                 >
-                    {
-                        data.pdf ? (<DownloadPDFButton url={ data.pdf }/>) : undefined
-                    }
+                    <DownloadPDFButton url={ data.pdf }/>
                     <ThemeToggle/>
                 </div>
                 <Page>
-                    <Introduction data={data.introduction}></Introduction>
-                    <Skills data={data.skills}></Skills>
-                    {
-                        data.education ? (<History title="Education" data={data.education}/>) : undefined
-                    }
-                    {
-                        data.experience ? (<History title="Experience" data={data.experience}/>) : undefined
-                    }
-                    {
-                        data.showcase ? (<ShowCase data={data.showcase} transformers={[GithubProjectTransformer]}/>) : undefined
-                    }
+                    <Introduction
+                        data={data.introduction}
+                    />
+                    <Skills
+                        title="Skills"
+                        data={data.skills}
+                    />
+                    <History
+                        title="Education"
+                        data={data.education}
+                    />
+                    <History
+                        title="Experience"
+                        data={data.experience}
+                    />
+                    <ShowCase
+                        title="Projects"
+                        data={data.showcase}
+                        transformers={[GithubProjectTransformer]}
+                    />
                 </Page>
             </div>
         </div>

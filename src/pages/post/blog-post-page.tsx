@@ -1,6 +1,5 @@
 import { LegacyRef, useEffect, useState } from "react";
 import yaml from "js-yaml";
-import { Page } from "../../components/page";
 import { Section } from "../../components/section";
 import Markdown from 'react-markdown'
 import { useParams, useNavigate } from "react-router-dom";
@@ -9,6 +8,7 @@ import { ThemeToggle } from "../../components/themeToggle";
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { vs2015 as codeStyle } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { PortfolioBox } from "./portfolio-box";
+import { AppCredit } from "../../components/page/credit";
 
 export function BlogPostPage() {
 
@@ -45,88 +45,95 @@ export function BlogPostPage() {
 
     return (
         <div
+            id="blog-page-root"
             style={{
                 display: "flex",
+                flexDirection: "column",
                 width: "100vw",
-                minHeight: "100vh"
+                minHeight: "100vh",
+                marginTop: 28,
+                marginBottom: 28,
+                gap: 18,
+                justifyContent: "stretch",
+                alignContent: "stretch",
+                alignItems: "center"
             }}
         >
-            <Page>
-                <div className={style.blog}>
-                    <div
-                        style={{
-                            display: "flex",
-                            flexDirection: "row",
-                            justifyContent: "space-between",
-                            gap: 8,
-                        }}
-                    >
-                        <PortfolioBox />
-                        <ThemeToggle />
-                    </div>
-                    {
-                        meta ? (
-                            <Section>
-                                <div style={{
-                                    display: "flex",
-                                    flexDirection: "column"
-                                }}>
-                                    <h1 style={{
-                                        marginTop: 0,
-                                        lineHeight: "120%",
-                                    }}>
-                                        {meta?.title}
-                                    </h1>
-                                    <em style={{
-                                        paddingBottom: 18
-                                    }}>{meta?.date}</em>
-                                    <Markdown
-                                        className={style.blogContent}
-                                        components={{
-                                            code(props) {
-                                                const { children, className, node, ref, ...rest } = props
-                                                const _ref = ref as LegacyRef<SyntaxHighlighter> | undefined;
-                                                const match = /language-(\w+)/.exec(className || '')
-                                                return match ? (
-                                                    <div
-                                                        style={{
-                                                            width: "95%",
-                                                            overflow: "clip"
-                                                        }}
-                                                    >
-                                                        <SyntaxHighlighter
-                                                            {...rest}
-                                                            ref={_ref}
-                                                            customStyle={{
-                                                                borderRadius: 6,
-                                                            }}
-                                                            CodeTag={"div"}
-                                                            wrapLines
-                                                            wrapLongLines
-                                                            children={String(children).replace(/\n$/, '')}
-                                                            language={match[1]}
-                                                            style={ codeStyle }
-                                                        />
-                                                    </div>
-                                                
-                                                ) : (
-                                                    <code {...rest} className={className}>
-                                                        {children}
-                                                    </code>
-                                                )
-                                            }
-                                        }}
-                                    >
-                                
-                                        {content}
-                                    </Markdown>
-                                </div>
-                            </Section>
-                        ) : undefined
-                    }
-                
+            <div className={style.blog}>
+                <PortfolioBox />
+                <div
+                    style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        justifyContent: "end",
+                        gap: 8,
+                    }}
+                >
+                    <ThemeToggle />
                 </div>
-            </Page>
+                {
+                    meta ? (
+                        <Section>
+                            <div style={{
+                                display: "flex",
+                                flexDirection: "column"
+                            }}>
+                                <h1 style={{
+                                    marginTop: 0,
+                                    lineHeight: "120%",
+                                }}>
+                                    {meta?.title}
+                                </h1>
+                                <em style={{
+                                    paddingBottom: 18
+                                }}>{meta?.date}</em>
+                                <Markdown
+                                    className={style.blogContent}
+                                    components={{
+                                        code(props) {
+                                            const { children, className, ...rest } = props;
+                                            const match = /language-(\w+)/.exec(className || '');
+                                            return match ? (
+                                                
+                                                <SyntaxHighlighter    
+                                                    wrapLines={true}
+                                                    wrapLongLines
+                                                    customStyle={{
+                                                        display: "flex",
+                                                        overflowX: "scroll",
+                                                        //wordBreak: "break-all"
+                                                    }}
+                                                    //showLineNumbers 
+                                                    lineProps={{style: {wordBreak: 'break-all', whiteSpace: 'pre-wrap'}}}
+                                                    PreTag={"div"}
+                                                    CodeTag={"div"}
+                                                    children={children as string}
+                                                    language={match[1]}
+                                                    style={codeStyle}
+                                                    
+                                                />  
+                                                
+                                            ) : (
+                                                <code {...props} className={className}>
+                                                    {children}
+                                                </code>
+                                            )
+                                        }
+                                    }}
+                                >
+                                
+                                    {content}
+                                </Markdown>
+                            </div>
+                        </Section>
+                    ) : undefined
+                }
+                
+            </div>
+            {
+                // Credit footer for the whole app
+            }
+            <AppCredit/>
         </div>
     );
 }

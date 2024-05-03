@@ -2,9 +2,9 @@ import React from "react";
 import { Section } from "../../../components/section";
 
 export function Skills(props: ISkillsProps) {
-    return (
+    return props.data === undefined ? null : (
         <Section
-            title="Skills"
+            title={ props.title }
         >
             {
                 props.data.map((category, index) =>
@@ -19,6 +19,7 @@ export function Skills(props: ISkillsProps) {
 }
 
 interface ISkillsProps {
+    title: string,
     data: SkillsData
 }
 

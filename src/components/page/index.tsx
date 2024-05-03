@@ -1,4 +1,5 @@
 import React from "react";
+import { AppCredit } from "./credit";
 
 export function Page(props: IPageProps) {
 
@@ -23,13 +24,7 @@ export function Page(props: IPageProps) {
                     props.children
                 }
             </div>
-            <footer style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "space-between"
-            }}>
-                <a rel="noreferrer" target="_blank" href="https://github.com/Xerren09/personal-portfolio"><em>Created by me! © 2024 </em></a>
-            </footer>
+            <AppCredit/>
         </div>
     );
 }
