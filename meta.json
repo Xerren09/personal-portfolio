@@ -1,0 +1,7 @@
+{
+    "name": "Bars Margetsch",
+    "description": "Heya! I am full-stack software-engineer living in Oulu, Finland, with an expertise in .NET and Angular interested building awesome tools and solving problems!",
+    "url": "https://barsmargetsch.net/",
+    "keywords": ["full-stack", "developer", ".Net", "C#", "Angular", "React", "Windows", "Web", "portfolio", "CV", "resume"],
+    "noscript": "I know. It&apos;s cringe. But you need to enable JavaScript to run this app, it was written in React after all (no, I am NOT rewriting it in pure html). \n\nIf you really really really don&apos;t want to enable it, here&apos;s a less fancy, less cool <a href=\"/CV.pdf\">PDF version</a>."
+}

@@ -5,15 +5,27 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "name": "Launch localhost",
+            "url": "http://localhost:5173/",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
             "name": "Launch via NPM",
             "type": "node",
             "request": "launch",
             "cwd": "${workspaceRoot}",
             "runtimeExecutable": "npm",
             "runtimeArgs": [
-                "run-script", "start"
+                "run", "dev"
             ],
-            "port": 3000
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "  ➜  Local:   http://localhost:([0-9]+)",
+                "uriFormat": "http://localhost:%s"
+            }, 
         }
     ]
 }
