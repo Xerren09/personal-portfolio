@@ -1,0 +1,15 @@
+.GetCV {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    justify-content: center;
+    align-content: center;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    background-color: var(--panel-background);
+    color: var(--url-default);
+    border: none;
+    padding: 8px;
+    gap: 8px;
+    color: var(--text-primary);
+}

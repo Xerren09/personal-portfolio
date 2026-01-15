@@ -1,34 +1,22 @@
 import React from "react";
-import { AppCredit } from "./credit";
+import Copyright from "../copyright";
+import styles from "./page.module.css";
 
-export function Page(props: IPageProps) {
-
+export default function Page(props: IPageProps) {
     return (
-        <div id="Page" style={{
-            display: "flex",
-            flexDirection: "column",
-            padding: 28,
-            paddingTop: 28,
-            gap: 28,
-            justifyContent: "stretch",
-            alignContent: "stretch"
-        }}>
-            <div id="PageContent" style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: 28,
-                justifyContent: "stretch",
-                alignContent: "stretch"
-            }}>
+        <main id={ styles.Page }>
+            <div id={ styles.PageContent }>
                 {
                     props.children
                 }
             </div>
-            <AppCredit/>
-        </div>
+            <Copyright style={{
+                alignSelf: props.alignFooter ?? 'flex-start'
+            }}/>
+        </main>
     );
 }
 
 interface IPageProps extends React.PropsWithChildren {
-    controls?: React.ReactNode
+    alignFooter?: 'flex-start' | 'center' | 'flex-end'
 }

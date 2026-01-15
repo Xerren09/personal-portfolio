@@ -1,0 +1,15 @@
+#ThemeToggle {
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    background-color: var(--panel-background);
+    border: none;
+    padding: 8px;
+    font-size: 13pt;
+    width: 45px;
+    height: 45px;
+}
+
+#ThemeToggle i svg{
+    color: var(--text-primary);
+    transition: 0.5s;
+}

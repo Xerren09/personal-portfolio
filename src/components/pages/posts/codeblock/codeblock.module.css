@@ -1,0 +1,5 @@
+.codeWrapper {
+    display: grid;
+    overflow: auto;
+    width: 100%;
+}

@@ -4,4 +4,4 @@ build:
   - npm ci
   - npm run build
 deploy:
-  entry: ./build/index.html
+  entry: ./dist/index.html

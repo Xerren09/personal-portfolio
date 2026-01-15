@@ -1,0 +1,15 @@
+.title {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 8px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+
+    span {
+        margin-bottom: 8px;
+    }
+}

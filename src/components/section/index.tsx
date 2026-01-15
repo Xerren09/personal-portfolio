@@ -1,23 +1,22 @@
 import React from "react";
 import styles from "./section.module.css";
 
-export function Section(props: ISectionProps) {
+export default function Section(props: ISectionProps) {
     return (
-        <div className={styles.section} style={props.style}>
+        <section className={styles.section} style={props.style}>
             {
                 props.title ? (
-                    <h2 className={styles.title}>
+                    <h2 id={ props.title.toLowerCase() } className={styles.title}>
                         {props.title}
                     </h2>
-                ) : undefined
+                ) : null
             }
-            
             <div className={styles.content}>
                 {
                     props.children
                 }
             </div>
-        </div>
+        </section>
     );
 }
 
