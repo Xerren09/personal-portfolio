@@ -14,8 +14,8 @@ createRoot(document.getElementById('root')!).render(
             <BrowserRouter>
                 <div className={styles.App} >
                     <Routes>
-                        <Route path="/" Component={Main} index/>
-                        <Route path="/posts/:postId" Component={Blog} />
+                        <Route path={`${import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`}`} Component={Main} index/>
+                        <Route path={`${import.meta.env.BASE_URL.endsWith("/") ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`}posts/:postId`} Component={Blog} />
                         <Route path="*" element={<Navigate to="/" />}  />
                     </Routes>
                 </div>

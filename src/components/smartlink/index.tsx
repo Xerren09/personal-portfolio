@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { BASE_URL } from "../../util";
 
 /**
  * Automatically performs a react-router programmatic navigation via {@link Link} if {@link HTMLAnchorElement.href|href} is relative. Otherwise it uses a standard
@@ -22,6 +23,6 @@ import { Link } from "react-router";
 export default function SmartLink(props: React.AnchorHTMLAttributes<HTMLAnchorElement>) {
     return (
         // If a link starts with / its for this website, do a programmatic SPA navigation. Otherwise do new tab.
-        props.href?.startsWith("/") ? <Link state={{ from: window.location.pathname.toString() }} to={props.href} {...props}>{props.children}</Link> : <a {...props} target="_blank">{props.children}</a>
+        props.href?.startsWith("/") ? <Link state={{ from: window.location.pathname.toString() }} to={new URL( props.href.substring(1), BASE_URL).toString()} {...props}>{props.children}</Link> : <a {...props} target="_blank">{props.children}</a>
     );
 }

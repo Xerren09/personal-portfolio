@@ -5,13 +5,15 @@ import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import yaml from "js-yaml";
 import Section from "@components/section";
 import { Link } from "react-router";
+import { BASE_URL } from "../../../../util";
 
 export default function PortfolioBox() {
 
     const [data, setData] = useState<IBlogHeader>();
 
     useEffect(() => {
-        fetch(`${window.location.origin}/blog/header.yaml`).then((response) => {
+        const url = new URL("blog/header.yaml", BASE_URL);
+        fetch(url).then((response) => {
             response.text().then(headerContent => {
                 const header: IBlogHeader = yaml.load(headerContent) as IBlogHeader;
                 setData(header);
@@ -22,7 +24,7 @@ export default function PortfolioBox() {
     return (
         <Section>
             <div className={ styles.container } >
-                <Link to={"/"}>
+                <Link to={BASE_URL.toString()}>
                     <img
                         src="/cover.webp"
                         height={80}
@@ -37,7 +39,7 @@ export default function PortfolioBox() {
                     <p>
                         {data?.tag}
                     </p>
-                    <Link to={"/"}>Check out my portfolio <i><FontAwesomeIcon icon={ faCaretRight } size="lg" /></i> </Link>
+                    <Link to={BASE_URL.toString()}>Check out my portfolio <i><FontAwesomeIcon icon={ faCaretRight } size="lg" /></i> </Link>
                 </div>
             </div>
         </Section>

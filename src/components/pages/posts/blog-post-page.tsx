@@ -15,6 +15,7 @@ import SmartLink from "@components/smartlink";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretLeft } from "@fortawesome/free-solid-svg-icons";
+import { BASE_URL } from "../../../util";
 
 export default function BlogPostPage() {
     const { postId } = useParams();
@@ -51,8 +52,9 @@ export default function BlogPostPage() {
             return;
         }
         // Load content markdown
-        const metaUrl = new URL(`/blog/${postId}/meta.yaml`, window.origin);
-        const contentUrl = new URL(`/blog/${postId}/post.md`, window.origin);
+        
+        const metaUrl = new URL(`blog/${postId}/meta.yaml`, BASE_URL);
+        const contentUrl = new URL(`/blog/${postId}/post.md`, BASE_URL);
 
         fetch(contentUrl).then((response) => {
             if (response.ok == false) {

@@ -11,13 +11,15 @@ import Page from "@components/page";
 import ThemeToggle from "@components/theme/toggle";
 import GetCV from "@components/cv";
 import { GithubProjectTransformer } from "./sections/projects/github/github";
+import { BASE_URL } from "../../../util";
 
 export default function PortfolioPage() {
 
     const [data, setData] = useState<null | PageData>(null);
 
     useEffect(() => {
-        fetch("/contents.yaml").then((response) => {
+        const url = new URL("contents.yaml", BASE_URL);
+        fetch(url).then((response) => {
             response.text().then(pageContents => {
                 const pageData: PageData = yaml.load(pageContents) as PageData;
                 setData(pageData);
